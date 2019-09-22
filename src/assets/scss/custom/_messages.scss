@@ -1,0 +1,37 @@
+.message-outer {
+    background: #EFEFEF;
+    padding: 10px;
+    margin: 15px 0;
+	
+	&.message-entry{
+		background: #DDD;
+	}
+
+	.message-inner {
+		background-color: #fff;
+		border: 1px solid #e7eaec;
+		padding: 10px;
+		border-radius: 4px;
+
+		.message-author {
+			font-size: 16px;
+			font-weight: 600;
+			color: #337ab7;
+		}
+
+		.message-date{
+			color: #888888;
+			float: right;
+		}
+
+		.message-content {
+			display: block;
+			font-weight: 600;
+		}
+	}
+
+	.btn{
+		margin-top: 5px;
+	}
+}
+

@@ -1,0 +1,56 @@
+// Here you can add other styles
+@import "~alertifyjs/build/css/alertify.min.css";
+@import "~alertifyjs/build/css/themes/bootstrap.css";
+
+.alertify .ajs-body .ajs-content {
+    padding: 16px 24px 16px 5px;
+}
+
+.alertify-notifier {
+	z-index: 20000 !important;
+}
+
+.alertify .ajs-dialog {
+	max-width: 450px;
+	border-radius: 0;
+}
+
+.alertify .ajs-header {
+    background-color: #FAFAFA;
+}
+
+.alertify .ajs-footer {
+	background-color: #FAFAFA;
+    padding: 5px;
+}
+
+.alertify .ajs-body .ajs-content {
+    font-size: 16px;
+}
+
+	.alertify-notifier .ajs-message {
+		border: 0;
+		border-radius: 0;
+	}
+
+		.alertify-notifier .ajs-message.ajs-success {
+			background: rgba(81, 163, 81, 0.95);
+		}
+
+		.alertify-notifier .ajs-message.ajs-error {
+			background: rgba(189, 54, 47, 0.95);
+		}
+
+		.alertify-notifier .ajs-message.ajs-warning {
+			background: rgba(248, 148, 6, 0.95);
+			color: #FFFFFF;
+		}
+
+.ajs-message.ajs-info {
+	color: #FFFFFF;
+	background: rgba(236, 188, 12, 0.95);
+}
+
+.alertify .alert .msg, .alertify .dialog .msg {
+    text-align: right;
+}

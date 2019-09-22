@@ -1,0 +1,130 @@
+.btn {
+	border-radius: 3px;
+}
+
+.btn-xs {
+    padding: 1px 6px;
+    line-height: 1.5
+}
+
+.btn-search {
+	color: #FFF;
+	background-color: #20a8d8;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #1b8eb7;
+	}
+}
+
+.btn-reset {
+	color: #FFF;
+	background-color: #67809F;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #578EBE;
+	}
+}
+
+.btn-save {
+	color: #FFF;
+	background-color: #26C281;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #20A46D;
+	}
+}
+
+.btn-cancel {
+	color: #FFF;
+	background-color: #BBB;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #AAA;
+	}
+}
+
+.btn-close {
+	color: #FFF;
+	background-color: #CCC;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #999;
+	}
+}
+
+.btn-add {
+	color: #FFF;
+	background-color: #ffc107;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #e0a800;
+	}
+}
+
+.btn-edit {
+	color: #FFF;
+	background-color: #26C281;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #20A46D;
+	}
+}
+
+.btn-delete {
+	color: #FFF;
+	background-color: #D91E18;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #B91A14;
+	}
+}
+
+.btn-csv {
+	color: #FFF;
+	background-color: #E87E04;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #C56B03;
+	}
+}
+
+.btn-activate {
+	color: #FFF;
+	background-color: #26C281;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #20A46D;
+	}
+}
+
+.btn-deactivate {
+	color: #FAFCFB;
+	background-color: #BFBFBF;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #ADADAD;
+	}
+}
+
+.btn-clone {
+	color: #FFF;
+	background-color: #ffc107;
+	&:hover, &:focus, &:active, &.active {
+		background-color: #e0a800;
+	}
+}
+
+.btn-group{
+	.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	
+	.btn:last-child:not(:first-child), .dropdown-toggle:not(:first-child) {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		opacity: .8;
+	}
+
+	.dropdown-menu{
+		min-width: 7rem !important;
+		left: 0 !important;
+	}
+
+	.dropdown-item {
+		padding: 8px 5px !important;
+	}
+
+}
+
+
+

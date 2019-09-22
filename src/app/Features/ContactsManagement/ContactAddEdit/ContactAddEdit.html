@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h4>{{(Contact.Id)?'Edit Contact':'Add New Contact'}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="Cancel()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<form (ngSubmit)="Save(frm)" name="form" #frm="ngForm" novalidate>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group row" [ngClass]="{ 'invalid-data': frm.submitted && !name.valid }">
+                    <label for="name" class="col-sm-4 col-form-label"> Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="Contact.Name"
+                            #name="ngModel" required>
+                        <div *ngIf="frm.submitted && !name.valid" class="invalid-text">Name is required</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-group row" [ngClass]="{ 'invalid-data': frm.submitted && !email.valid }">
+                    <label for="email" class="col-sm-4 col-form-label"> Email</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="email" name="email" [(ngModel)]="Contact.Email"
+                            #email="ngModel" email required>
+                        <div *ngIf="frm.submitted && email.hasError('required')" class="invalid-text">Email is required
+                        </div>
+                        <div *ngIf="frm.submitted && email.errors?.email  && !email.hasError('required')"
+                            class="invalid-text">
+                            Email is invaild, format should be john@doe.com.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-close" (click)="Cancel()">Cancel</button>
+        <button type="submit" class="btn btn-sm btn-save">Save</button>
+    </div>
+</form>

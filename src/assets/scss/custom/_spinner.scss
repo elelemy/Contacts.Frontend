@@ -1,0 +1,30 @@
+/****************************/
+/* BLOCK UI OVERRIDE STYLES */
+/****************************/
+
+/* Block UI Wrapper (Backdrop) */
+div.block-ui-wrapper {
+    width: 100%;
+	height: 100%;
+	background-color: rgba(100,100,100,.3);
+  
+  }
+  
+  /* Spinner */
+  div.block-ui-wrapper .loader {
+    border-color: #fff; /* Circle color */
+    border-left-color: #708ada; /* Spinning section in circle color */
+    position: fixed;
+	z-index: 10051;
+	width: 70px;
+	height: 70px;
+	top: 40%;
+	left: 50%;
+	margin-left: -25px;
+    text-align: left;
+  }
+  
+  /* Message */
+  div.block-ui-spinner .message {
+    color: #708ada; /* Loading text color */
+  }

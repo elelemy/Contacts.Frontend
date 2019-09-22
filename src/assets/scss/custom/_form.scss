@@ -1,0 +1,18 @@
+.invalid-data .col-form-label,  .invalid-data  .form-control-label{
+    color: $form-feedback-invalid-color;
+}
+
+.invalid-data .input-group-addon{
+    color:$form-feedback-invalid-color;
+    border-color:$form-feedback-invalid-color;
+}
+
+.invalid-data .form-control {
+    color: $form-feedback-invalid-color;
+    border-color:$form-feedback-invalid-color;
+}
+
+.invalid-data .invalid-text{
+    color:$form-feedback-invalid-color;
+    border-color:$form-feedback-invalid-color;
+}
